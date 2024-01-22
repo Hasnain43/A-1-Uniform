@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>About Us</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Joan&family=Parisienne&family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700&family=Tai+Heritage+Pro&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <div class="about">
+      <div class="abt-navbar">
+        <div class="navbar">
+          <div class="logo">
+            <img src="images/logo.jpeg" width="100px" height="40px" />
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact us.html">Contact Us</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+          </nav>
+          <img src="images/cart.png" width="30px" height="30px" />
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()"/>
+        </div>
+      </div>
+
+      <!------------- Navbar Ends -------->
+
+      <div class="container my-1">
+        <div
+          class="row featurette d-flex justify-content-center align-items-center"
+        >
+          <div class="col-md-7">
+            <h2 class="featurette-heading">
+              A-1 UNIFORMS
+              <span class="text-muted">A HISTORY OF HELPING FAMILIES</span>
+            </h2>
+            <p class="lead">
+              In 1985, our founders were disturbed by high prices in the school
+              uniform market adversely affecting families throughout the
+              country. As a result, A-1 Uniforms was born, providing better
+              quality school uniforms than the competition at a great price
+              point. Affordable school uniforms became available to everyone.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              width="500"
+              src="images/about2.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="row featurette d-flex justify-content-center align-items-center"
+        >
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Our Mission</h2>
+            <p class="lead">
+              A-1 Uniforms is dedicated to cater the Uniform needs across the
+              country. We aim to redefine the traditional monotony, offering the
+              elements of quality, comfort and convenience.
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              width="500"
+              src="images/about.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="row featurette d-flex justify-content-center align-items-center"
+        >
+          <div class="col-md-7 order-md-1">
+            <h2 class="featurette-heading">A-1 UNIFORMS TODAY</h2>
+            <p class="lead">
+              A-1 Uniforms is schoolwear made for kids to shine. We are a
+              schoolwear brand on a mission to connect with the next generation
+              of kids we outfit, schools we serve and parents we partner with.
+            </p>
+          </div>
+          <div class="col-md-5 order-md-2">
+            <img
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              width="500"
+              src="images/about1.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+    <!-- ------------ Footer ------------>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download our App</h3>
+            <p>Download App for Android and iOS Mobile Phones</p>
+            <div class="app-logo">
+              <img src="images/19.png" />
+              <img src="images/18.png" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/logo.jpeg " width="190px" height="70px" />
+            <p>
+              Our Purpose Is To Sustainably Make The Pleasure And Benefits Of
+              Uniforms Accessible To Many.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">© 2022-2023 - A-1 UNIFORMS All Right Reserved</p>
+      </div>
+    </div>
+  </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous">
+
+
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+ 
+      function menutoggle(){
+      if(MenuItems.style.maxHeight == "0px";)
+       { 
+        MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+          MenuItems.style.maxHeight = "0px";
+        }  
+      }
+
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
